@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0052)file:///C:/Users/sulta/Desktop/TeamWork/index.html?# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -35,10 +35,16 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
+			<input id="email" type="email" placeholder="Email" />
+
 			<input type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<!-- <button>Sign In</button> -->
+			<button id="testEmail" onClick="CheckEmail(document.getElementById('email').value)">Sign In</button>
+			
+			<div id="output">
+
+			</div>
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -56,7 +62,5 @@
 		</div>
 	</div>
 </div>
-
-
 </body>
 </html>
