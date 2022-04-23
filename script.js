@@ -3,7 +3,7 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
 
-	
+// regex vaildate mail
 function ValidateEmailAddress(emailString) 
 {
 	var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,10 +28,10 @@ function CheckEmail(emailString)
 }
 
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+// 
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+
+
+signUpButton.addEventListener('click', () => {container.classList.add("right-panel-active");});
+
+signInButton.addEventListener('click', () => {container.classList.remove("right-panel-active");});
