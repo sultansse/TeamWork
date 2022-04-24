@@ -55,10 +55,10 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="otherPages/loginPage.html">Login</a>
+                                    <a class="nav-link" id="signIn" href="otherPages/loginPage.html">Login</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="otherPages/regPage.html">Register</a>
+                                    <a class="nav-link" id="signUp" href="otherPages/regPage.html">Register</a>
                                  </li>
                               </ul>
                            </div>
@@ -79,7 +79,15 @@
                            <p>Hello, its our project for mid2!
                               we decided to make site,that can comress and decomress the files that you update
                            </p>
-                           <a href="#">Update file</a>
+
+                           
+                           <form action="upload.php" method="post" enctype="multipart/form-data">
+                              <input type="file" name="fileToUpload" id="fileToUpload">
+                              <input type="submit" value="Upload Image" name="submit">
+                           </form>
+                           
+
+                           
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
